@@ -1,11 +1,7 @@
-try{
-  const val = document.querySelectorAll(".mdc-text-field__input")[1];
-  let clrs = [...document.querySelectorAll(".hex--label")] ;
-  clrs = clrs.filter((clr, index) => { if(index != 0 && index != 10) return clr ;  }) 
-  const ans = clrs.map((clr, index) => `--primary-${(index+1)*100}: ${clr.textContent} ;`).join("") ;
-console.log(ans) ;
-  
-
-}catch(err){
-  console.log(err);
-}
+You may have seen the colors pallet from --primary-100 to --primary-900, it's a simple script that generates this color shades
+1) go to https://noeldelgado.github.io/shadowlord/#73fdad 
+2) enter your favorite color 
+3) enter the percentage of 20
+4) right click and then go to inspect
+5) go to console tab and copy paste the above script
+6) copy those colors and paste in your :root element and save
